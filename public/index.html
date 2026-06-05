@@ -2368,7 +2368,7 @@ views.auditoria = {
 views.admin = {
   async render() {
     const tbody = document.getElementById('admin-user-tbody');
-    ui.loading(tbody.closest('.card'));
+    if (tbody) ui.loading(tbody.closest?.('.card') || tbody);
     const { data } = await api.get('/users');
     const ROLES = {admin:'Administrador',secretario:'Secretario',asesor:'Asesor',consulta:'Solo lectura'};
     tbody.innerHTML = data.map(u=>`
