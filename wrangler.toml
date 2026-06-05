@@ -5,4 +5,4 @@ compatibility_date = "2025-06-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "sagel-db"
-database_id = "PEGAR-AQUI-TU-DATABASE-ID"
+database_id = "e0f9f095-9573-44a9-9287-e04a8f769505"
